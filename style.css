@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+#mainContainer {
+    width: 100%;
+    height: auto;
+    display: flex;   
+    justify-content: space-around;
+    align-items: self-start;
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+
+#leftContainer {
+   display: flex;
+   flex-direction: column;
+   /* border: 2px solid yellow;  */
+}
+#title{
+    border: 1px solid black;
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 20px;
+    color: red;
+    margin-top: 5px;
+
+}
+#color{
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#text{
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 20px;
+    color: black;
+    margin-top: 1rem;
+    padding-top: 5px;
+}
+#button{
+    width: 100px;
+    height: 40px;
+   margin-top: 0.5rem;
+   margin-left: 8rem;
+   border-radius: 20px;
+   background-color: orange;
+}
+
+#rightContainer {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    width: 400px;
+    height: auto;
+}
+h2{
+    text-align: center;
+    color: blue;
+    margin-bottom: 2rem;
+    font-size: 28px;
+}
+#resultContainer{
+   width: 350px;
+   height: auto; 
+   padding-left: 5rem;
+}
+.outer {
+    width: 300px;
+    height: 300px;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    position: relative;
+  }
+  
+  .inner {
+    width: 250PX;
+    height: 200PX;
+    color: #fff;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+
+  }
+  
+  .inner p {
+    margin-bottom: 10px;
+  }
+  
+  .deleteBtn{
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /*  for tablets */
+    h1 {
+        font-size: 28px;
+        font-weight: bolder;
+    }
+    
+    #mainContainer {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    #leftContainer {
+        width: 100%; 
+    }
+    
+    #rightContainer {
+        width: 100%; 
+    }
+    
+    #title {
+        width: 100%; 
+    }
+    
+    #button {
+        margin-left: 0; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*  Android phones */
+    h1 {
+        font-size: 28px; 
+        font-weight: bolder;
+    }
+    
+    #title {
+        width: 90%; 
+    }
+    
+    #text {
+        width: 90%; 
+    }
+    
+    #button {
+        margin-left: 0; 
+    }
+}
+
+
+
+
+
+   
